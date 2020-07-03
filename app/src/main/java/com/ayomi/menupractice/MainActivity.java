@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Option Menu Code.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -31,7 +33,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "clicked this", Toast.LENGTH_SHORT).show();
                 return true;
         }
-        
+
         return super.onOptionsItemSelected(item);
+    }
+
+    public void popupButton(View view) {
+        
     }
 }
